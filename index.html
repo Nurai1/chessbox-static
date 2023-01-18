@@ -1,0 +1,226 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>ChessBox </title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  <!--  Для браузеров IE < 9  -->
+  <!--[if lte IE9]>
+  <div style="background-color: rgb(253,78,78); color: #fff; width: 100%; height: 100%; margin: 0; padding: 50px; box-sizing: border-box; position: fixed; top: 0; bottom: 0;left: 0; right: 0; font-size: 26px; line-height: 150%;">
+     <p style="width: 80%;  margin: auto; text-align: center;"> Приносим свои извинения. Данный сайт не может корректно работать в браузере "Internet Explorer" ниже 10(-й) версии.
+          Пожалуйста, используйте другой более современный браузер или обновите ваш "Internet Explorer" до 10-11(-й) версии.</p>
+  </div>
+  <script>
+       if(window.stop !== undefined) {
+         window.stop();
+       } else if (document.execCommand !== undefined) { // для IE
+         document.execCommand("Stop", false);
+       }
+   </script>
+  <![endif]-->
+</head>
+<body class="body_boxing">
+  <!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+   ym(66341872, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true,
+        webvisor:true
+   });
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/66341872" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+  <header class="header header_boxing clearfix">
+    <div class="wrapper">
+      <nav class="menu">
+        <span class="menu_item_home menu_item"><a href="">Главная</a></span>
+        <span class="menu_item"><a href="news.html">Новости</a></span>
+        <span class="menu_item"><a href="gallery.html">Галерея</a></span>
+        <span class="menu_item"><a href="about.html">О федерации</a></span>
+      </nav>
+      <div class="header__logo"></div>
+    </div>
+  </header>
+  <main class="main main_boxing">
+    <section class="news news_boxing">
+      <div class="wrapper">
+        <div class="news__block">
+          <h1 class="title">Последняя новость</h1>
+          <h3 class="news__title subtitle">
+              Чемпионат ФБШР в <span class="highlight_boxing">Санкт- Петербурге</span>.
+          </h3>
+          <p class="news__text">
+            Чемпионат ФШБР проводится с 17 по 19 сентября 2021 г. в Санкт-Петербурге, ул. Политехническая
+            д.27 спорткомплекс «Политехник».
+            Мандатная комиссия, взвешивание пройдут 17.09.2021 г. с 15:00 до 17:00 (согласно графику взвешивания команд)
+            по адресу: г. Санкт-Петербург, пр. Мориса Тореза, 36, Гостиница «Спутник». За более подробной информацией
+            обращайтесь в положение. Желаю хороших соревнований и справедливого судейства!
+          </p>
+          <button class="boxing__button">
+            <a target="_blank" href="docs/09-2021-ЧР-шахбокс%20.pdf">
+                Открыть положение
+            </a>
+          </button>
+          <div class="news__image"><img src="images/news_09-2021.jpeg" alt=""></div>
+        </div>
+      </div>
+    </section>
+    <section class="clubs">
+      <h2 class="intro_subtitle subtitle">Клубы федерации</h2>
+      <div class="clubs__container">
+        <div class="club">
+          <h3 class="club__title">Академия бокса</h3>
+          <p class="club__address">
+            г. Москва, Лужнецкая набережная, д.24, стр. 4
+          </p>
+          <span class="club__phone">
+            Телефон:
+            <a href="tel:+7(903)621-05-30">
+              +7(903)621-05-30
+            </a>
+          </span>
+          <div class="club__people">
+            <div class="club__people__title">Тренер:</div>
+            Амилкар Медина Да Силва
+            <!-- <br /> -->
+            <!-- Аурелиано де Жезуш -->
+          </div>
+        </div>
+        <div class="club">
+          <h3 class="club__title">Клуб единоборств «Сталинград»</h3>
+          <p class="club__address">
+            г. Санкт-Петербург,
+            наб. Обводного канала,
+            136
+          </p>
+          <span class="club__phone">
+            Телефон:
+            <a href="tel:+7(950)325-52-69">
+              +7(950)325-52-69
+            </a>
+          </span>
+          <div class="club__people">
+            <div class="club__people__title">Тренер:</div>
+            Арнольд Баклицкий
+          </div>
+        </div>
+        <div class="club">
+          <h3 class="club__title">Клуб «Егиль»</h3>
+          <p class="club__address">
+            г. Казань, ул. Ю.Фучика, 79а
+          </p>
+          <span class="club__phone">
+            Телефон:
+            <a href="tel:+7(950)325-52-69">
+              +7(950)325-52-69
+            </a>
+          </span>
+          <div class="club__people">
+            <div class="club__people__title">Тренер:</div>
+            Илья Береснев
+          </div>
+        </div>
+        <div class="club">
+          <h3 class="club__title">Fitness Hall</h3>
+          <p class="club__address">
+            г. Уфа, проспект Октября, 4/1
+          </p>
+          <span class="club__phone">
+            Телефон:
+            <a href="tel:+7(989)958-74-33">
+              +7(989)958-74-33
+            </a>
+          </span>
+          <div class="club__people">
+            <div class="club__people__title">Тренер:</div>
+            Раиль Бузыкаев
+          </div>
+        </div>
+        <div class="club">
+          <h3 class="club__title">ЮУрГУ</h3>
+          <p class="club__address">
+            г. Челябинск, проспект Ленина, 76
+          </p>
+          <span class="club__phone">
+            Телефон:
+            <a href="tel:+7(951)118-55-58">
+              +7(951)118-55-58
+            </a>
+          </span>
+          <div class="club__people">
+            <div class="club__people__title">Тренер:</div>
+            Алексей Шаховский
+          </div>
+        </div>
+        <div class="club">
+          <h3 class="club__title">Школа единоборств</h3>
+          <p class="club__address">
+            Белгородская обл., г. Алексеевка, ул. Урицкого 91
+          </p>
+          <span class="club__phone">
+            Телефон:
+            <a href="tel:+7(909)205-28-55">
+              +7(909)205-28-55
+            </a>
+          </span>
+          <div class="club__people">
+            <div class="club__people__title">Тренер:</div>
+            Алексей Борухович
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="intro">
+      <div class="intro__container wrapper">
+        <h2 class="intro_subtitle subtitle">Чем же примечателен шахбокс?</h2>
+        <p class="intro_text"><span class="highlight_boxing">ШАХБОКС</span> –
+          это симбиоз шахмат и бокса,  вид, который в последнее время получил
+          большее развитие и популярность. <span class="highlight_boxing">ШАХБОКС</span>
+          имеет большой потенциал, так как сочетает в себе
+          физическую силу и возможности развития интеллекта, формируя новое боевое мышление.
+          <br />
+          Узнайте подробнее о самом интеллектуальном боксе и его правилах из
+          раздела <span class="highlight_boxing">"О федерации"</span>.
+           <br />
+          Узнайте о программе интеллектуальной и физической подготовки детей, молодежи и взрослых
+           посредством интеллектуально-физического единоборства ШАХБОКС из другой замечательной статьи
+            также в разделе <span class="highlight_boxing">"О федерации"</span>.
+         </p>
+      </div>
+      <div class="intro__container wrapper">
+          <h1 class="title">Документы</h1>
+          <button class="boxing__button">
+              <a target="_blank" href="docs/устав 1.pdf">
+                  Устав
+              </a>
+          </button>
+          <button class="boxing__button">
+              <a target="_blank" href="docs/св-во о регистрации.jpg">
+                  Свидетельство о регистрации
+              </a>
+          </button>
+          <button class="boxing__button">
+              <a target="_blank" href="docs/rules.pdf">
+                  Правила вида "Шахбокс"
+              </a>
+          </button>
+      </div>
+    </section>
+    <section class="docs"></section>
+    <section class="calendar"></section>
+    <section class="info contacts"></section>
+  </main>
+  <footer></footer>
+  <script src="scripts/script.js"></script>
+  <script src="news/chess-boxing-news.js"></script>
+  <script src="scripts/mainPage.js"></script>
+</body>
+</html>

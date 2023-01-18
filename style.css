@@ -1,0 +1,381 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans:400,700&display=swap&subset=cyrillic');
+
+/* http://meyerweb.com/eric/tools/css/reset/
+	* v2.0 | 20110126
+	* License: none (public domain)
+	* Changed from CSS to SASS
+	*/
+html, body, div, span, applet, object, iframe, h1, h2,
+h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym,
+address, big, cite, code, del, dfn, em, img, ins, kbd,
+q, s, samp, small, strike, strong, sub, sup, tt, var, b,
+u, i, center, dl, dt, dd, ol, ul, li, fieldset, form,
+label, legend, table, caption, tbody, tfoot, thead,
+tr, th, td, article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup, menu, button,
+nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+  /*
+    buttons
+  */
+.chess__button{
+  margin-top: 10px;
+  padding: 10px 20px;
+  background: #301519
+}
+
+.chess__button > a{
+  color: #B48B55;
+  text-decoration: none;
+}
+
+.chess__button:hover{
+  background: #221111;
+}
+
+.boxing__button{
+  margin-top: 10px;
+  margin-right: 15px;
+  padding: 10px 20px;
+  background: #b28407;
+}
+
+.boxing__button > a{
+  color: #fff;
+  text-decoration: none;
+}
+
+.boxing__button:hover{
+  background: #cc9933;
+}
+
+body{
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 24px;
+  line-height: 1.35;
+}
+
+.clearfix::after{
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.body_chess{
+  color: inherit;
+}
+
+.body_boxing{
+  color: #fff;
+}
+
+.wrapper{
+  width: 920px;
+  padding: 0 30px;
+  margin: 0 auto;
+}
+
+.title{
+  font-size: 40px;
+  font-weight: bold;
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+    .title > a {
+        color: inherit;
+        text-decoration: none;
+    }
+
+    .fa-chevron-down {
+        transition: transform 0.5s linear;
+        transform: rotate(-90deg);
+        position: relative;
+        top: 5px;
+    }
+
+.hideBlock {
+  opacity: 0;
+}
+
+.link{
+  text-decoration: none;
+  color: #820317;
+}
+
+.highlight_boxing{
+  color: #fc3;
+}
+
+.body_boxing .title{
+}
+
+.body_chess .title{
+  color: #420317;
+}
+
+.body_boxing .menu_item_home img{
+}
+
+.body_chess .menu_item_home img{
+
+}
+
+.menu_item_home img{
+  width: 20px;
+  height: 20px;
+  color: #fff;
+}
+
+.subtitle{
+  font-size: 28px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.header {
+  height: 84px;
+}
+
+.header_chess{
+  background: #553C1B;
+}
+
+.header_boxing{
+  background: linear-gradient(to right, #111 65%, #ffcc33);
+}
+
+.header__logo{
+  display: inline-block;
+  width: 80px;
+  height: 88px;
+  background: url(images/logo.svg) no-repeat;
+  background-size: cover;
+  float: right;
+  margin-top: -2px;
+}
+
+.main_boxing{
+  min-height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 60%), rgba(0, 0, 0, 60%)), url(images/box-ring.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.menu {
+  float: left;
+  font-size: 24px;
+  padding-top: 30px;
+}
+
+.body_boxing .menu_item:hover{
+  color: #fc3;
+}
+
+.body_chess .menu_item:hover{
+  color: #B48B55;
+}
+
+.menu_item {
+  padding-right: 20px;
+}
+
+.menu_item > a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.main_chess{
+  background: url("images/chessboard.jpg") center;
+  /* background-size: cover; */
+  background-attachment: fixed;
+}
+
+.clubs {
+
+}
+
+.clubs__container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.club {
+  width: 344px;
+  box-sizing: border-box;
+  padding: 10px;
+  background: #111;
+  border: 1.5px solid #CCCC00;
+  border-radius: 10px;
+  margin: 8px;
+}
+
+.club__title {
+  text-align: center;
+  font-size: 32px;
+  color: #fc3;
+}
+
+.club__address {
+
+}
+
+.club__phone {
+  line-height: 44px;
+}
+
+.club__phone > a {
+  color: #fff;
+}
+
+.club__people {}
+
+.club__people__title {
+  color: #fc3;
+  font-size: 120%;
+  margin: 0px 0px 8px;
+}
+
+.news, .about{
+  padding: 15px 0;
+}
+
+.news__block{
+  padding: 15px;
+  margin-bottom: 25px;
+}
+
+.chess_block{
+  padding: 15px;
+  margin-bottom: 25px;
+  background: #B48B55;
+}
+
+.news_boxing .news__block{
+  background: #111;
+  border: 1.5px solid #CCCC00;
+}
+
+.news__title{
+  font-size: 32px;
+  text-align: center;
+}
+
+.news__text{
+  margin: 25px 0;
+}
+
+.news__image{
+  margin-top: 10px;
+  width: 100%;
+  height: auto;
+}
+
+.news__image img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.intro{
+  height: 650px;
+  padding: 30px 0;
+  color: #fff;
+}
+
+.intro__container{
+  background: #111;
+  padding: 25px;
+  margin: 25px inherit;
+}
+
+.intro_subtitle{
+  margin-bottom: 30px;
+}
+
+.gallery_container {
+    display: flex;
+    justify-content: space-around;
+    align-content: space-between;
+    flex-wrap: wrap;
+    /* transition: opacity 0.5s linear;
+  opacity: 0;
+  height: 0px;*/
+}
+
+.gallery_container > img {
+  width: 450px;
+  height: 450px;
+  object-fit: cover;
+  margin-bottom: 25px;
+  border: 2px solid #ffcc33;
+}
+
+@media screen and (max-width: 979.98px){
+  .wrapper{
+    width: auto;
+    padding: 0 30px;
+  }
+
+  .gallery_container > img {
+    width: 320px;
+    height: 320px;
+  }
+}
+
+@media screen and (max-width: 620px){
+
+  .menu_item {
+    font-size: 18px;
+    padding-right: 10px;
+  }
+}
+
+@media screen and (max-width: 700px){
+
+  .header__logo{
+    display: none
+  }
+}
+
+@media screen and (max-width: 420px){
+
+  .menu_item {
+    font-size: 15px;
+    padding-right: 5px;
+  }
+
+  .wrapper{
+    padding: 0 10px;
+  }
+}
